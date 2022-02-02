@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+body {
+  min-height: 100vh;
+}
+
 .container {
   width: 70%;
   margin: auto;
@@ -199,4 +203,19 @@ main {
 .container-main .comic .text-container p {
   margin-top: 10px;
   color: grey;
+}
+
+.container-comic {
+  padding: 25px 0px;
+  display: flex;
+}
+.container-comic .comic-img img {
+  width: 300px;
+}
+.container-comic .comic-info {
+  color: white;
+  margin-left: 45px;
+}
+.container-comic .comic-info h3, .container-comic .comic-info h4, .container-comic .comic-info p {
+  margin: 15px 0px;
 }

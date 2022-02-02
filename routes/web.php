@@ -12,8 +12,19 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+// $comics = config("comics");
+
 
 Route::get('/', function () {
     $comics = config("comics");
     return view('home', ['comics'=>$comics]);
+});
+
+Route::get('/{pages}', function ($page) {
+    $comics = config("comics");
+    foreach($comics as $key=>$item){
+        if ($key== $page) {
+            return view('partials.comic', ['comicItem'=>$item]);
+        }
+    }
 });

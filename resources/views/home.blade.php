@@ -7,14 +7,13 @@
 @section('pageContent')
     <div id="jumbo"></div>
     <div class="container container-main">
-        @foreach ($comics as $item)
+        @foreach ($comics as $key=>$item)
         <div class="comic">
             <div class="img-container">
-                <img src="{{$item['thumb']}}"  salt="{{$item['title']}}">
+                <a href="/{{$key}}""><img src="{{$item['thumb']}}"  salt="{{$item['title']}}"></a>
             </div>
             <div class="text-container">
-                <a href="#">{{$item['series']}}</a>
-                {{-- <p>{{price}}</p> --}}
+                <a href="/{{$key}}">{{$item['series']}}</a>
             </div>
         </div>
         @endforeach
