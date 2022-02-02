@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secondo Layout con Float</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+    </header>
+
+    <main class="clearfix debug">
+        <aside class="links left"></aside>
+        <section class="main-content left">
+            <div class="container">
+                <!-- inizio prima row  -->
+                <div class="row clearfix">
+                    <div class="box left"></div>
+                    <div class="box left"></div>
+                </div>
+                <!-- /row -->
+                <!-- inizio seconda row -->
+                <div class="row clearfix">
+                    <div class="box right clearfix">
+                        <div class="right">1</div>
+                    </div>
+                    <div class="box right">2</div>
+                    <div class="box right">3</div>
+                </div>
+                <!-- /row -->
+            </div>
+        </section>
+        <aside class="widget left"></aside>
+    </main>
+
+    <footer>
+
+    </footer>
+    
+</body>
+</html>
