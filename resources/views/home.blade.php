@@ -1,7 +1,7 @@
 @extends('layouts.layoutBase')
 
 @section('pageTitle')
-    Home
+    DC Comics
 @endsection
 
 @section('pageContent')

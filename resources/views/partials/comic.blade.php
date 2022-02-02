@@ -1,7 +1,7 @@
 @extends('layouts.layoutBase')
 
 @section('pageTitle')
-    {{$comicItem['series']}}
+    {{$comicItem['title']}}
 @endsection
 
 @section('pageContent')
