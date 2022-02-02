@@ -1,10 +1,17 @@
 .header {
-  
+    .top-header {
+        background-color: #0c7cec;
+        display: flex;
+        justify-content: end;
+        p {
+            color: white;
+            margin-right: 150px;
+        }
+    }
     .container {
         display: flex;
         justify-content: space-around;
         align-items: center;
-
         #img-box {
             width: 30%;
             height: 120px;

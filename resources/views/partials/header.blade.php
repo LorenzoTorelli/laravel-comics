@@ -1,6 +1,10 @@
 <header class="header">
+    <div class="top-header">
+        <p>Lorem ipsum dolor </p>
+        <p>Lorem ipsum dolor</p>
+    </div>
     <div class="container">
-        <div id="img-box"><img src="../assets/img/dc-logo.png" alt="dc-logo" ></div>
+        <div id="img-box"><img src="{{asset('img/dc-logo.png')}}" alt="dc-logo" ></div>
         <div id="nav-box">
             <nav>
                 <ul>
@@ -14,7 +18,6 @@
                    <li><a href="">Fans</a></li>
                    <li><a href="">News</a></li>
                    <li><a href="">Shop</a></li>
-
                 </ul>
             </nav>
         </div>

@@ -1,0 +1,121 @@
+.footer {
+    // height: 600px;
+    // background-color: blue;
+
+    #top-footer {
+        background-color: #0c7cec;
+        height: 120px;
+
+        .container {
+            height: 100%;
+            ul {
+                display: flex;
+                list-style: none;
+                justify-content: space-around;
+                align-items: center;
+                height: 100%;
+
+                li {
+                    display: flex;
+                    flex-direction: row;
+
+                    img {
+                        width: 60px;
+                    }
+
+                    a {
+                        text-decoration: none;
+                        margin-left: 15px;
+                        align-self: center;
+                        color: white;
+                        text-transform: uppercase;
+                    }
+                }
+            }
+        }
+    }
+
+    #mid-footer {
+        background-image: url("../img/footer-bg.jpg");
+        height: 400px;
+
+        .container {
+            display: flex;
+            height: 100%;
+
+            .left-side {
+                width: 50%;
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                padding: 25px 0px;
+                .elenco {
+                    
+                    h3 {
+                        color: white;
+                        text-transform: uppercase;
+                        margin: 15px 0px;
+                        font-size: 20px;
+                    }
+
+                    ul {
+                        list-style: none;
+                        li {
+                            line-height: 25px;
+                            a {
+                                text-decoration: none;
+                                color: grey;
+                            }
+                        }
+                    }
+                }
+            }
+            .right-side {
+                width: 50%;
+                background-image: url("../img/dc-logo-bg.png");
+                background-position:center;
+                background-repeat: no-repeat ;
+               
+            }
+        }
+    }
+
+    #bottom-footer {
+        height: 115px;
+        background-color:rgb(48, 48, 48) ;
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 100%;
+
+            #button {
+                border: 2px solid #0c7cec;
+                padding: 15px 25px;
+
+                a {
+                    text-decoration: none;
+                    color: white;
+                    text-transform: uppercase;
+                }
+            }
+
+            #socials {
+                display: flex;
+                align-items: center;
+
+                h3 {
+                    color: #0c7cec;
+                    text-transform: uppercase;
+                }
+
+                img {
+                    margin: 10px
+                }
+            }
+        }
+
+
+    }
+}
