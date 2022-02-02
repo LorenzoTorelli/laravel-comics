@@ -1,0 +1,46 @@
+#jumbo {
+    height: 400px;
+    background-image: url("../img/jumbotron.jpg");
+    background-size:cover ; 
+    background-position: top;
+}
+
+.container-main {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 50px 0px; 
+
+    
+    .comic {
+        margin: 10px 5px;
+        width: calc(100% / 6 - 30px);
+       
+        .img-container {
+
+            img {
+                object-fit: cover;
+            }
+        }
+        
+        .text-container {
+            margin-top: 10px;
+
+            a {
+                color: white;
+                word-wrap: normal;
+                text-decoration: none;
+                font-weight: bold ;
+            }
+            a:hover {
+                text-decoration: underline;
+            }
+
+            p {
+                margin-top: 10px;
+                color: grey;
+            }
+        }
+
+    }
+}

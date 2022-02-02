@@ -9,28 +9,33 @@
   margin: auto;
 }
 
+main {
+  width: 100%;
+  background-color: black;
+}
+
 .footer #top-footer {
   background-color: #0c7cec;
   height: 120px;
 }
-.footer #top-footer .container {
+.footer #top-footer .container-footer {
   height: 100%;
 }
-.footer #top-footer .container ul {
+.footer #top-footer .container-footer ul {
   display: flex;
   list-style: none;
   justify-content: space-around;
   align-items: center;
   height: 100%;
 }
-.footer #top-footer .container ul li {
+.footer #top-footer .container-footer ul li {
   display: flex;
   flex-direction: row;
 }
-.footer #top-footer .container ul li img {
+.footer #top-footer .container-footer ul li img {
   width: 60px;
 }
-.footer #top-footer .container ul li a {
+.footer #top-footer .container-footer ul li a {
   text-decoration: none;
   margin-left: 15px;
   align-self: center;
@@ -41,34 +46,34 @@
   background-image: url("../img/footer-bg.jpg");
   height: 400px;
 }
-.footer #mid-footer .container {
+.footer #mid-footer .container-footer {
   display: flex;
   height: 100%;
 }
-.footer #mid-footer .container .left-side {
+.footer #mid-footer .container-footer .left-side {
   width: 50%;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   padding: 25px 0px;
 }
-.footer #mid-footer .container .left-side .elenco h3 {
+.footer #mid-footer .container-footer .left-side .elenco h3 {
   color: white;
   text-transform: uppercase;
   margin: 15px 0px;
   font-size: 20px;
 }
-.footer #mid-footer .container .left-side .elenco ul {
+.footer #mid-footer .container-footer .left-side .elenco ul {
   list-style: none;
 }
-.footer #mid-footer .container .left-side .elenco ul li {
+.footer #mid-footer .container-footer .left-side .elenco ul li {
   line-height: 25px;
 }
-.footer #mid-footer .container .left-side .elenco ul li a {
+.footer #mid-footer .container-footer .left-side .elenco ul li a {
   text-decoration: none;
   color: grey;
 }
-.footer #mid-footer .container .right-side {
+.footer #mid-footer .container-footer .right-side {
   width: 50%;
   background-image: url("../img/dc-logo-bg.png");
   background-position: center;
@@ -114,45 +119,84 @@
   color: white;
   margin-right: 150px;
 }
-.header .container {
+.header .container-header {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  padding: 10px 0px;
 }
-.header .container #img-box {
+.header .container-header #img-box {
   width: 30%;
   height: 120px;
   display: flex;
   align-items: center;
   cursor: pointer;
 }
-.header .container #nav-box {
+.header .container-header #nav-box {
   width: 70%;
   height: 120px;
 }
-.header .container #nav-box nav {
+.header .container-header #nav-box nav {
   height: 100%;
 }
-.header .container #nav-box nav ul {
+.header .container-header #nav-box nav ul {
   display: flex;
   list-style: none;
   justify-content: space-between;
   height: 100%;
   align-items: center;
 }
-.header .container #nav-box nav ul .active {
+.header .container-header #nav-box nav ul .active {
   color: #0c7cec;
 }
-.header .container #nav-box nav ul li {
+.header .container-header #nav-box nav ul li {
   margin: 0px 5px;
 }
-.header .container #nav-box nav ul li a {
+.header .container-header #nav-box nav ul li a {
   color: grey;
   text-decoration: none;
   text-transform: uppercase;
   font-size: 19px;
   height: 100%;
 }
-.header .container #nav-box nav ul li a:hover {
+.header .container-header #nav-box nav ul li a:hover {
   color: #0c7cec;
+}
+
+#jumbo {
+  height: 400px;
+  background-image: url("../img/jumbotron.jpg");
+  background-size: cover;
+  background-position: top;
+}
+
+.container-main {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 50px 0px;
+}
+.container-main .comic {
+  margin: 10px 5px;
+  width: calc(16.6666666667% - 30px);
+}
+.container-main .comic .img-container img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.container-main .comic .text-container {
+  margin-top: 10px;
+}
+.container-main .comic .text-container a {
+  color: white;
+  word-wrap: normal;
+  text-decoration: none;
+  font-weight: bold;
+}
+.container-main .comic .text-container a:hover {
+  text-decoration: underline;
+}
+.container-main .comic .text-container p {
+  margin-top: 10px;
+  color: grey;
 }

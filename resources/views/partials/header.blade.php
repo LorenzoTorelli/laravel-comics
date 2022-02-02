@@ -3,7 +3,7 @@
         <p>Lorem ipsum dolor </p>
         <p>Lorem ipsum dolor</p>
     </div>
-    <div class="container">
+    <div class="container container-header">
         <div id="img-box"><img src="{{asset('img/dc-logo.png')}}" alt="dc-logo" ></div>
         <div id="nav-box">
             <nav>

@@ -1,7 +1,7 @@
 <footer class="footer">
             
         <div id="top-footer">
-            <div class="container">
+            <div class="container container-footer">
                 <ul>
                     <li>
                         <img src="{{asset('img/buy-comics-digital-comics.png')}}" alt="digital-comics">
@@ -28,7 +28,7 @@
         </div>
 
         <div id="mid-footer">
-            <div class="container">
+            <div class="container container-footer">
                 <div class="left-side">
                     <div class="elenco">
                         <h3>Dc comics</h3>
@@ -86,7 +86,7 @@
         </div>
 
         <div id="bottom-footer">
-            <div class="container">
+            <div class="container container-footer">
                 <div id="button">
                     <a href="">Sign-up Now!</a>
                 </div>
