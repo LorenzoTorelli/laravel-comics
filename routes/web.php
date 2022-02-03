@@ -22,9 +22,5 @@ Route::get('/', function () {
 
 Route::get('/{pages}', function ($page) {
     $comics = config("comics");
-    foreach($comics as $key=>$item){
-        if ($key== $page) {
-            return view('partials.comic', ['comicItem'=>$item]);
-        }
-    }
+    return view('partials.comic', ['comicItem'=>$comics[$page]]);
 });

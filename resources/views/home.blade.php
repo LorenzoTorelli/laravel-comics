@@ -10,7 +10,7 @@
         @foreach ($comics as $key=>$item)
         <div class="comic">
             <div class="img-container">
-                <a href="/{{$key}}""><img src="{{$item['thumb']}}"  salt="{{$item['title']}}"></a>
+                <a href="/{{$key}}"><img src="{{$item['thumb']}}"  salt="{{$item['title']}}"></a>
             </div>
             <div class="text-container">
                 <a href="/{{$key}}">{{$item['series']}}</a>
